@@ -9,7 +9,7 @@ LINK.c=$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)
 LDFLAGS= -lrt
 LDDIR=-L$(ROOT)/lib
 LDLIBS=$(LDDIR) -lapue $(EXTRALIBS)
-CFLAGS=-ansi -std=c99 -I$(ROOT)/include -Wall -DLINUX -D_GNU_SOURCE $(EXTRA)
+CFLAGS=-ansi -pthread -std=c99 -I$(ROOT)/include -Wall -DLINUX -D_GNU_SOURCE $(EXTRA)
 RANLIB=echo
 AR=ar
 AWK=awk
